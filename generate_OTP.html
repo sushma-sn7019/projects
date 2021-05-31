@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generate OTP</title>
+<style>
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width:auto;
+}
+button:hover {
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+<form>
+<h2>Generate One Time Password(OTP)</h2>
+<button onClick="generateOTP()">Generate OTP</button>
+</form>
+<script>
+// Function to generate OTP
+function generateOTP() {
+    var digits = '0123456789';
+    let OTP = '';
+    for (let i = 0; i < 5; i++ ) {
+        OTP += digits[Math.floor(Math.random() * 10)];
+    }
+    alert('OTP :  '+OTP);
+}
+
+</script>
+</body>
+</html>
