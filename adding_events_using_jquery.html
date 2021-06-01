@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Event using jquery</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+		.que1,.que2,.que3{
+			border: 1px solid red;
+			width: 500px;
+			height: auto;
+			text-align: center;
+			top: 50px;
+			left: 10px;
+			position: absolute;
+		}
+		.que2{
+			top: 150px;
+			left: 520px;
+		}
+		.que3{
+			top: 250px;
+			left: 1030px;
+		}
+		h3{
+			color: white;
+			padding: 10px;
+			text-align: left;
+			box-shadow: 0 2px 8px 0 rgb(32 33 361 / 30%);
+            background:linear-gradient(to bottom left,#8000ff 20%,#1a1a00 100%);
+            margin: 2px;
+          }
+          #down1,#down2,#down3,#downn1,#downn2,#downn3,#downnn1,#downnn2,#downnn3{
+          	color: wheat;
+          	left: 310px;
+          	position:relative;
+          }
+          #down2, #downn2, #downnn2{
+          	left: 235px;
+          }
+          #p1,#p2,#p3,#pp1,#pp2,#pp3,#ppp1,#ppp2,#ppp3{
+          	display: none;
+          }
+          
+          ul{
+          	margin: 0px;
+          	text-align: justify;
+          	width: 380px;
+          	font-size: 18px;
+          	margin: 5px;
+          }
+          p{
+          	font-size: 18px;
+          }
+    </style>
+</head>
+<body>
+<div class="que1">
+	<h2> Using Toggle Method</h2>
+	<h3>What is jQuery?<span id="down1"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<p id="p1">jQuery is one of the most popular Javascript liabraries out there.</p>
+	<h3>what is the use of jQuery?<span id="down2"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="p2">
+		<li>jQuery makes web development easier by overcoming all the 'stuff' that makes Javascript difficult to use</li>
+		<li>jQuery is a lightweight, "write less, do more".</li>
+		<li>jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.</li></ul>
+	
+	<h3>why do we use it?<span id="down3"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="p3"><li>jQuery it means use them if it makes it easier to develop your application.</li>
+    <li>If you're developing a library on the other hand, please take a moment to consider if you actually need jQuery as a dependency.</li></ul>
+</div>
+<div class="que2">
+	<h2> Using Show Method</h2>
+	<h3>What is jQuery?<span id="downn1"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<p id="pp1">jQuery is one of the most popular Javascript liabraries out there.</p>
+	<h3>what is the use of jQuery?<span id="downn2"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="pp2">
+		<li>jQuery makes web development easier by overcoming all the 'stuff' that makes Javascript difficult to use</li>
+		<li>jQuery is a lightweight, "write less, do more".</li>
+		<li>jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.</li></ul>
+	
+	<h3>why do we use it?<span id="downn3"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="pp3"><li>jQuery it means use them if it makes it easier to develop your application.</li>
+    <li>If you're developing a library on the other hand, please take a moment to consider if you actually need jQuery as a dependency.</li></ul>
+</div>
+<div class="que3">
+	<h2> Using hide Method</h2>
+	<h3>What is jQuery?<span id="downnn1"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<p id="ppp1">jQuery is one of the most popular Javascript liabraries out there.</p>
+	<h3>what is the use of jQuery?<span id="downnn2"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="ppp2">
+		<li>jQuery makes web development easier by overcoming all the 'stuff' that makes Javascript difficult to use</li>
+		<li>jQuery is a lightweight, "write less, do more".</li>
+		<li>jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.</li></ul>
+	
+	<h3>why do we use it?<span id="downnn3"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="ppp3"><li>jQuery it means use them if it makes it easier to develop your application.</li>
+    <li>If you're developing a library on the other hand, please take a moment to consider if you actually need jQuery as a dependency.</li></ul>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+	$('#down1').click(function(){
+		$('#p1').toggle();
+	})
+    $('#down2').click(function(){
+		$('#p2').toggle();
+	})
+	$('#down3').click(function(){
+		$('#p3').toggle();
+	})
+	$('#downn1').click(function(){
+		$('#pp1').show();
+	})
+    $('#downn2').click(function(){
+		$('#pp2').show();
+	})
+	$('#downn3').click(function(){
+		$('#pp3').show();
+	})
+	$('#downnn1').click(function(){
+		$('#ppp1').hide();
+	})
+    $('#downnn2').click(function(){
+		$('#ppp2').hide();
+	})
+	$('#downnn3').click(function(){
+		$('#ppp3').hide();
+	})
+	</script>
+</script>
+</body>
+</html>
